@@ -1,11 +1,3 @@
-/* Modo oscuro */
-
-@media (prefers-color-scheme: dark) {
-    :root {
-      --negro: #ececec;
-    }
-  }
-  
   * {
     margin: 0;
     padding: 0;
@@ -27,8 +19,6 @@
     /* opcional */
     object-position: center center;
   }
-  
-  /* Reset enlaces para funcionar como cajas... */
 
   a {
     display: block;
@@ -36,26 +26,19 @@
     color: inherit;
     font-size: inherit;
   }
-
-  /* ... excepto los que se encuentran en p's */
   
   p a {
     display: inline;
   }
   
-  /* Fuera puntos <li> */
 
   li {
     list-style-type: none;
   }
-  
-  /* Config anclas suaves */
 
   html {
     scroll-behavior: smooth;
   }
-  
-  /* Desactivamos estilos por defecto principales etiquetas de texto */
 
   h1,
   h2,
@@ -78,8 +61,6 @@
     text-decoration: none;
     color: inherit;
   }
-  
-  /* No problems pseudoelementos  quotes */
 
   blockquote:before,
   blockquote:after,
@@ -88,15 +69,6 @@
     content: "";
     content: none;
   }
-  
-  /* Config texto seleccionado */
-
-  ::selection {
-    background-color: var(--negro);
-    color: var(--blanco);
-  }
-  
-  /* Nivelamos problemas de tipografías y colocación de formularios */
 
   form,
   input,
@@ -112,8 +84,6 @@
     display: block;
     appearance: none;
   }
-  
-  /* Reset tablas */
 
   table,
   tr,
@@ -121,8 +91,6 @@
     border-collapse: collapse;
     border-spacing: 0;
   }
-  
-  /* No problems con SVG */
 
   svg {
     width: 100%;
@@ -130,15 +98,10 @@
     fill: currentColor;
   }
 
-  /* Config tipografía web */
-
   body {
     min-height: 100vh;
     font-size: 100%;
     line-height: 1.5em;
     hyphens: auto;
-    font-smooth: always;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
   
